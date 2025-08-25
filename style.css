@@ -1,0 +1,57 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+  background-color: #D5E1EF;
+  font-family: "Outfit", sans-serif;
+}
+
+main {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+#QR-container {
+    width: 320px;
+    padding: 16px 16px 40px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+#QR-container #QR-image-container img {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+
+}
+
+#QR-container #text-zone {
+    margin-top: 20px;
+    text-align: center;
+    color: hsl(218, 44%, 22%);
+    padding: 0 16px;
+}
+
+#QR-container #titulo-text-zone {
+    font-size: 22px;
+    margin-bottom: 16px;
+    line-height: 1.2;
+}
+
+#QR-container #parrafo-text-zone {
+    color: hsl(216, 15%, 48%);
+    font-size: 15px;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
