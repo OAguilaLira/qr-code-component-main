@@ -32,38 +32,63 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 - Semantic HTML5 markup
 - CSS custom properties
-- Flexbox
 - CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+While working on this project, I strengthened several core HTML and CSS concepts. One of the key takeaways was the proper use of semantic HTML elements to build a clear and accessible structure.
 
-To see how you can add code snippets, see below:
+I used tags like <main>, <article>, <figure>, <header>, and <footer>, which improve both code readability and accessibility for screen readers, as well as SEO.
 
 ```html
-<h1>Some HTML code I'm proud of</h1>
+<main>
+  <article id="QR-container">
+    <figure id="QR-image-container">
+      <img src="./images/image-qr-code.png" alt="QR" />
+    </figure>
+    <div id="text-zone">
+      <header>
+        <h3 id="titulo-text-zone">
+          Improve your front-end skills by building project.
+        </h3>
+      </header>
+      <p id="parrafo-text-zone">
+        Scan the QR code to visit Frontend Mentor and take your coding
+        skills to the next level
+      </p>
+    </div>
+  </article>
+</main>
 ```
+
+
+I also practiced CSS layout techniques, especially using Grid to center the component both vertically and horizontally on the screen. I'm particularly proud of this part of the CSS:
+
 ```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
+main {
+  display: grid;
+  place-items: center;
+  height: 100vh;
 }
 ```
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
 
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+In addition, I worked on applying styles like rounded corners, soft shadows for depth, and a clean, minimalist color palette. Here's how I styled the card component:
+
+```css
+#QR-container {
+  width: 320px;
+  padding: 16px 16px 40px;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+```
+
+I also learned how to properly include external fonts from Google Fonts and made sure to use descriptive alt attributes for images to enhance accessibility.
+
+This project helped me solidify my understanding of semantic structure, responsive layout, and writing clean, accessible code.
 
 ### Continued development
 
